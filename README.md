@@ -8,7 +8,7 @@ Healthcare Financial Analysis with SQL
 ### Description
 This project analyzes 55,500 synthetic healthcare records (May 2019 - June 2024) using SQL to identify financial patterns and cost drivers in hospital operations. Focusing on billing optimization, resource allocation, and operational efficiency, I examined relationships between insurance providers, medical conditions, admission types, and hospital costs.
 
-This synthetic dataset, created using Python's Faker library, mimics real-world healthcare data structure while maintaining privacy compliance. It serves as an educational tool to demonstrate SQL proficiency, healthcare data analysis skills, and the ability to interpret results critically—including recognizing when data patterns reflect standardized synthetic generation versus real-world complexity.
+This synthetic dataset, created using Python's Faker library, mimics real-world healthcare data structure while maintaining privacy compliance. It serves as an educational tool to demonstrate SQL proficiency, healthcare data analysis skills, and the ability to interpret results critically; including recognizing when data patterns reflect standardized synthetic generation versus real-world complexity.
 
 The project demonstrates skills in SQL querying, database design, financial analysis, and healthcare data management, translating raw patient records into actionable business intelligence for hospital administrators.
 
