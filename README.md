@@ -88,17 +88,17 @@ The analysis involved:
 #### Research Questions Answered:
 
 **1. Does insurance provider correlate with billing amounts?**
-* **Answer: No meaningful correlation.** Average billing ranges from $25,389 (UnitedHealthcare) to $25,616 (Medicare)—a difference of only $227 or 0.9%. All five major insurance providers cluster tightly around $25,500, with consistent standard deviation (~$14,200). This demonstrates highly standardized pricing regardless of payer type.
+* **Answer: No meaningful correlation.** Average billing ranges from $25,389 (UnitedHealthcare) to $25,616 (Medicare), a difference of only $227 or 0.9%. All five major insurance providers cluster tightly around $25,500, with consistent standard deviation (~$14,200). This demonstrates highly standardized pricing regardless of payer type.
 
 **2. Are certain medical conditions more expensive to treat?**
-* **Answer: Minimal variation in this synthetic dataset.** Obesity shows highest average billing ($25,806), while Cancer shows lowest ($25,162)—a difference of only $644 or 2.5%. All six conditions (Obesity, Diabetes, Asthma, Arthritis, Hypertension, Cancer) cluster within a narrow range. Cost variability (coefficient of variation) is consistent at 54-56% across all conditions, suggesting the synthetic data generation process applied uniform variance rather than reflecting real-world clinical complexity.
+* **Answer: Minimal variation in this synthetic dataset.** Obesity shows highest average billing ($25,806), while Cancer shows lowest ($25,162), a difference of only $644 or 2.5%. All six conditions (Obesity, Diabetes, Asthma, Arthritis, Hypertension, Cancer) cluster within a narrow range. Cost variability (coefficient of variation) is consistent at 54-56% across all conditions, suggesting the synthetic data generation process applied uniform variance rather than reflecting real-world clinical complexity.
 
 **3. Which admission type has the longest hospital stays?**
-* **Answer: Virtually identical across all types.** Emergency admissions average 15.60 days, Elective 15.53 days, and Urgent 15.41 days—a difference of only 0.19 days (4.5 hours). Interestingly, Elective procedures show highest revenue per day ($1,649) despite having second-longest stays, while Urgent admissions are most efficient ($1,656/day) with shortest LOS.
+* **Answer: Virtually identical across all types.** Emergency admissions average 15.60 days, Elective 15.53 days, and Urgent 15.41 days, a difference of only 0.19 days (4.5 hours). Interestingly, Elective procedures show highest revenue per day ($1,649) despite having second-longest stays, while Urgent admissions are most efficient ($1,656/day) with shortest LOS.
 
 #### Strategic Insights (Recognizing Synthetic Data Patterns):
 
-* **Standardized Pricing Model:** The remarkable consistency across insurance providers ($227 range) and medical conditions ($644 range) demonstrates what a fully standardized healthcare pricing system would look like—useful for understanding baseline operational metrics.
+* **Standardized Pricing Model:** The remarkable consistency across insurance providers ($227 range) and medical conditions ($644 range) demonstrates what a fully standardized healthcare pricing system would look like. This is useful for understanding baseline operational metrics.
 * **Uniform Resource Utilization:** Near-identical length of stay across all admission types (15.4-15.6 days) suggests the dataset models a highly efficient, protocol-driven hospital environment with minimal variation in patient pathways.
 * **Educational Value:** While real-world healthcare shows much greater variance (emergency typically 2-3x longer than elective, cancer 50-100% more expensive than routine conditions), this synthetic dataset provides a clean baseline for practicing SQL analysis techniques without the noise of outliers and special cases.
 * **Analysis Transferability:** The SQL techniques demonstrated here (CTEs, window functions, multi-dimensional aggregation) apply directly to real healthcare data, where they would reveal more actionable cost optimization opportunities.
